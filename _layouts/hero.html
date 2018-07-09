@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <h1>{{ page.title }}</h1>
+    {% if page.image %}
+      <img src="/{{ page.image }}">
+    {% endif %}
+    <p>This will soon be the {{ page.title }} page of the HS Cheat Sheet site.</p>
+    {% include footer.html %}
+  </body>
+</html>
